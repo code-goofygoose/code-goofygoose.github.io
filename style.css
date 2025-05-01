@@ -1,5 +1,5 @@
 body {
-    padding-top: 70px;
+    padding: 50px 30px 100px 30px;
     background-image: url(assets/UP.png);
     background-color: #9b111e;
     background-repeat: no-repeat;
@@ -13,9 +13,10 @@ img {
     height: 125px;
 }
 #content {
+    align-content: center;
     text-align: center;
     display: block;
-    padding: 80px;
+    padding: 80px 70px 80px 70px ;
     font-family: Arial, Helvetica, sans-serif;
 }
 #timer {
