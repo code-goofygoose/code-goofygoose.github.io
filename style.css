@@ -1,11 +1,13 @@
 body {
-    padding: 70px;
+    padding-top: 70px;
     background-image: url(assets/UP.png);
     background-color: #9b111e;
     background-repeat: no-repeat;
     background-size: cover;
     color: whitesmoke;
     user-select: none;
+    min-height: 600px;
+    min-width: 380px;
 }
 img {
     height: 125px;
