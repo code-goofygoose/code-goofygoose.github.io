@@ -12,6 +12,6 @@ var x = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("message").innerHTML = "It's time.";
+        document.getElementById("message").innerHTML = "It's time. LABAN!";
       }
 })
