@@ -10,6 +10,26 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = days + " DAYS " + hours + " HOURS "
     + minutes + " MINUTES " + seconds + " SECONDS ";
 
+    if (days === 1) {
+      document.getElementById("timer").innerHTML = days + " DAY " + hours + " HOURS "
+      + minutes + " MINUTES " + seconds + " SECONDS ";
+    }
+
+    if (hours === 1) {
+        document.getElementById("timer").innerHTML = days + " DAYS " + hours + " HOUR "
+        + minutes + " MINUTES " + seconds + " SECONDS ";
+      }
+    
+    if (minutes === 1) {
+      document.getElementById("timer").innerHTML = days + " DAYS " + hours + " HOURS "
+      + minutes + " MINUTE " + seconds + " SECONDS ";
+    }
+
+    if (seconds === 1) {
+      document.getElementById("timer").innerHTML = days + " DAYS " + hours + " HOURS "
+      + minutes + " MINUTES " + seconds + " SECOND ";
+    }
+    
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("message").innerHTML = "It's time. LABAN!";
