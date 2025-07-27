@@ -7,9 +7,13 @@ var x = setInterval(function() {
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    document.getElementById("timer").innerHTML = days + " DAYS " + hours + " HOURS "
-    + minutes + " MINUTES " + seconds + " SECONDS ";
+    //document.getElementById("timer").innerHTML = days + " DAYS " + hours + " HOURS " + minutes + " MINUTES " + seconds + " SECONDS ";
+    document.getElementById("days").innerHTML = days + " DAYS ";
+    document.getElementById("hours").innerHTML = hours + " HOURS ";
+    document.getElementById("minutes").innerHTML = minutes + " MINUTES ";
+    document.getElementById("seconds").innerHTML = seconds + " SECONDS ";
 
+    //grammar
     if (days === 1) {
       document.getElementById("timer").innerHTML = days + " DAY " + hours + " HOURS "
       + minutes + " MINUTES " + seconds + " SECONDS ";
